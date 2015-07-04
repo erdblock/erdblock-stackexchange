@@ -1,0 +1,21 @@
+h1(style="background-image:url(./plugin/"+uuid+"/public/"+site+".png)")
+	a(href=user.link) #{config.site.value}
+h2 #{user.display_name}
+
+div(class='rep')
+	p(class='title') #{user.reputation}
+	p(class='text') reputation
+
+div(class='seperator')
+
+span(class='title') Badges
+span(class='badges')
+	span
+		span(class='circle gold')
+		span(class='number') #{user.badge_counts.gold}
+	span
+		span(class='circle silver')
+		span(class='number') #{user.badge_counts.silver}
+	span
+		span(class='circle bronze')
+		span(class='number') #{user.badge_counts.bronze}
